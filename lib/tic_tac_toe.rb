@@ -56,6 +56,7 @@ class TicTacToe
       
 
   def turn
+    puts "Please enter the number of where you would like to move (1-9)?"
     input = gets.strip
     index = input_to_index(input)
     if valid_move?(index)
@@ -93,6 +94,8 @@ class TicTacToe
   end
 
   def play
+    puts "Welcome to Tic Tac Toe!"
+    display_board
     while !over?
       turn
     end
